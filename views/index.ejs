@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Discord Saldırı</title>
+    <meta name="author" content="Lemons1337"/>
+    <meta name="description" content="Lemons1337"/>
+    <meta name="keywords" content="discord spammer, discord raidbot, free discord spammer, discord spammy, discord spam, discord raids"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="icon" href="https://cdn.rootapis.tk/assets/images/favicon.gif" type="image/gif" >
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="menu active">
+        <button id="Join" class="method">Sunucuya Katıl</button>
+        <button id="Leave" class="method">Sunucudan Ayrıl</button>
+        <button id="Spam" class="method">Kanal Saldırısı</button>
+        <button id="DM" class="method">DM Saldırısı</button>
+        <button id="Friend" class="method">Arkadaş Ekleme Saldırısı</button>
+        <span>Doğrulanmış Tokenler: <span id="verified"><%= verified %></span></span>
+        <span>Doğrulanmamış Tokenler: <span id="unverified"><%= unverified %></span></span>
+        <span>Çalışan Proxyler: <span id="proxies"><%= proxies %></span></span>
+    </div>
+
+    <div class="menu-btn active"><span></span></div>
+
+    <div id="join" style="display: none;" class="container">
+
+        <h1>Sunucuya Katıl</h1>
+        
+        <div class="form">
+          <input id="invite" type="text" placeholder="Davet Kodu">
+          <button class="send" id="join-btn">Gönder</button>
+        </div>
+  
+      </div>
+  
+      <div id="leave" style="display: none;" class="container">
+  
+        <h1>Sunucudan Ayrıl</h1>
+        
+        <div class="form">
+          <input id="guild" type="text" placeholder="Sunucu ID">
+          <button class="send" id="leave-btn">Gönder</button>
+        </div>
+  
+      </div>
+
+      <div id="spam" style="display: none;" class="container">
+
+      <h1>Kanal Saldırısı</h1>
+      
+      <div class="form">
+        <input id="channel" type="text" placeholder="Kanal ID">
+        <textarea id="msg" type="text" placeholder="Mesajınız..."></textarea>
+
+        <h2>Konuşma Metni</h2>
+        
+        <br>
+
+        <label class="switch">
+          <input id="tts" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+
+        <br>
+        <br>
+
+        <button class="send" id="spam-btn">Gönder</button>
+      </div>
+
+    </div>
+
+    <div id="dm" style="display: none;" class="container">
+
+      <h1>DM Saldırısı</h1>
+      
+      <div class="form">
+        <input id="user" type="text" placeholder="Kullanıcı ID">
+        <textarea id="message" type="text" placeholder="Mesajınız..."></textarea>
+        <button class="send" id="dm-btn">Gönder</button>
+      </div>
+
+    </div>
+
+    <div id="friend" style="display: none;" class="container">
+
+      <h1>Arkadaşlık İsteği Saldırısı</h1>
+      
+      <div class="form">
+        <input id="user2" type="text" placeholder="Kullanıcı ID">
+        <button class="send" id="friend-btn">Gönder</button>
+      </div>
+
+    </div>
+
+    <ul class="bg-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+
+</body>
+
+</html>

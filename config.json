@@ -1,0 +1,7 @@
+{
+    "port": 8080,
+    "time": 60,
+    "timeout": 50,
+    "max_proxies": 50,
+    "console_output": true
+}

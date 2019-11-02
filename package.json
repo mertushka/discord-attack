@@ -4,7 +4,8 @@
   "description": "Advanced Discord Spammer with multiple options and auto scraping proxies!",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "npm install && npm start"
   },
   "dependencies": {
     "express": "^4.16.4",
